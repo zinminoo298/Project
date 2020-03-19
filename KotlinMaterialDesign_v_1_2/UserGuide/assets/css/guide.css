@@ -1,0 +1,405 @@
+.ps-li{
+	border-radius: 5px; 
+	margin: 10px;
+	color: #565656;
+}
+
+.ps-title {
+	padding-left: 5px;
+	padding-right: 15px;
+	width: 200px;
+	color: #757575;
+	text-decoration: underline;
+}
+
+div.image1 {
+	padding: 10px; 
+	width: 15px;
+	height : 15px;
+   content:url(../img/feature/baseline_article_white_24.png);
+}​
+
+#ps-icon-article {
+	padding: 10px; 
+	width: 15px;
+	height : 15px;
+	background-repeat: no-repeat;
+	background-image : url('../img/feature/baseline_article_white_24.png');
+
+}
+
+.ps-icon-article-inner::before {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_article_white_24.png');
+}
+
+.ps-icon-basket {
+	padding: 10px; 
+	width:20px;
+	content: url('../img/feature/baseline_basket_line_white_24.png');
+}
+
+.ps-icon-basket-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 20px;
+	content: url('../img/feature/baseline_basket_line_white_24.png');
+}
+
+.ps-section-title {
+	color: #ef6100;
+	font-weight: bold;
+}
+
+.ps-expend-icon {
+	float: right; 
+	position: absolute; 
+	top: 8px;
+	right: 10px;
+} 
+
+.ps-code-break {
+	word-break: break-all;
+}
+
+
+.ps-icon-checkout {
+	padding: 10px; 
+	width:20px;
+	content: url('../img/feature/baseline_checkout_white_24.png');
+}
+
+.ps-icon-checkout-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 20px;
+	content: url('../img/feature/baseline_checkout_white_24.png');
+}
+
+.ps-icon-comment {
+	padding: 10px; 
+	width:20px;
+	content: url('../img/feature/baseline_comment_white_24.png');
+}
+
+.ps-icon-comment-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 20px;
+	content: url('../img/feature/baseline_comment_white_24.png');
+}
+
+.ps-icon-coverflow {
+	padding: 10px; 
+	width:20px;
+	content: url('../img/feature/baseline_coverflow_white_24.png');
+}
+
+.ps-icon-coverflow-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 20px;
+	content: url('../img/feature/baseline_coverflow_white_24.png');
+}
+
+.ps-icon-dashboard {
+	padding: 10px; 
+	width:15px;
+	content: url('../img/feature/baseline_dashboard_white_24.png');
+}
+
+.ps-icon-dashboard-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_dashboard_white_24.png');
+}
+
+.ps-icon-detail {
+	padding: 10px; 
+	width:15px;
+	content: url('../img/feature/baseline_detail_white_24.png');
+}
+
+.ps-icon-detail-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_detail_white_24.png');
+}
+
+.ps-icon-dialog {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_dialog_white_24.png');
+}
+
+.ps-icon-dialog-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_dialog_white_24.png');
+}
+.ps-icon-expandable {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_expandable_white_24.png');
+}
+
+.ps-icon-expandable-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_expandable_white_24.png');
+}
+.ps-icon-forgot {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_forgot_password_white_24.png');
+}
+
+.ps-icon-forgot-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_forgot_password_white_24.png');
+}
+.ps-icon-gallery {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_gallery_white_24.png');
+}
+
+.ps-icon-gallery-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_gallery_white_24.png');
+}
+.ps-icon-gdpr {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_copyright_white_24.png');
+}
+
+.ps-icon-gdpr-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_copyright_white_24.png');
+}
+
+.ps-icon-grid {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_grid_white_24.png');
+}
+
+.ps-icon-grid-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_grid_white_24.png');
+}
+
+.ps-icon-list {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_list_white_24.png');
+}
+
+.ps-icon-list-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_list_white_24.png');
+}
+
+.ps-icon-loadmore {
+	padding: 15px; 
+	width:10px;
+	content: url('../img/feature/baseline_load_more_white_24.png');
+}
+
+.ps-icon-loadmore-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 10px;
+	content: url('../img/feature/baseline_load_more_white_24.png');
+}
+.ps-icon-login {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_login_white_24.png');
+}
+
+.ps-icon-login-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_login_white_24.png');
+}
+
+.ps-icon-map {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_map_white_24.png');
+}
+
+.ps-icon-map-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_map_white_24.png');
+}
+.ps-icon-media {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_media_white_24.png');
+}
+
+.ps-icon-media-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_media_white_24.png');
+}
+.ps-icon-menu {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/ion-android-menu.png');
+}
+
+.ps-icon-menu-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/ion-android-menu.png');
+}
+
+.ps-icon-notfound {
+	padding: 15px; 
+	width:15px;
+	content: url('../img/feature/baseline_not_found_white_24.png');
+}
+
+.ps-icon-notfound-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_not_found_white_24.png');
+}
+.ps-icon-order {
+	padding: 15px; 
+	width:20px;
+	content: url('../img/feature/order.png');
+}
+
+.ps-icon-order-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 20px;
+	content: url('../img/feature/order.png');
+}
+.ps-icon-card {
+	padding: 15px; 
+	width:10px;
+	content: url('../img/feature/baseline_dollar_white_24.png');
+}
+
+.ps-icon-card-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 10px;
+	content: url('../img/feature/baseline_dollar_white_24.png');
+}
+.ps-icon-profile {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/baseline_profile_white_24.png');
+}
+
+.ps-icon-profile-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_profile_white_24.png');
+}
+.ps-icon-rating {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/baseline_star_white_24.png');
+}
+
+.ps-icon-rating-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_star_white_24.png');
+}
+.ps-icon-filter {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/filter.png');
+}
+
+.ps-icon-filter-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/filter.png');
+}
+.ps-icon-setting {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/setting.png');
+}
+
+.ps-icon-setting-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/setting.png');
+}
+.ps-icon-signup {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/singup.png');
+}
+
+.ps-icon-signup-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/singup.png');
+}
+.ps-icon-splash {
+	padding: 15px; 
+	width : 10px;
+	content: url('../img/feature/baseline_splash_white_24.png');
+}
+
+.ps-icon-splash-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 10px;
+	content: url('../img/feature/baseline_splash_white_24.png');
+}
+.ps-icon-stepper {
+	padding: 15px; 
+	width : 10px;
+	content: url('../img/feature/baseline_stepper_white_24.png');
+}
+
+.ps-icon-stepper-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 10px;
+	content: url('../img/feature/baseline_stepper_white_24.png');
+}
+.ps-icon-timeline {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/baseline_timeline_white_24.png');
+}
+
+.ps-icon-timeline-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_timeline_white_24.png');
+}
+.ps-icon-verification {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/baseline_verification_white_24.png');
+}
+
+.ps-icon-verification-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_verification_white_24.png');
+}
+.ps-icon-walk {
+	padding: 15px; 
+	width : 15px;
+	content: url('../img/feature/baseline_walkthrough_white_24.png');
+}
+
+.ps-icon-walk-inner {
+	padding : 10px 10px 10px 20px; 
+	width: 15px;
+	content: url('../img/feature/baseline_walkthrough_white_24.png');
+}
