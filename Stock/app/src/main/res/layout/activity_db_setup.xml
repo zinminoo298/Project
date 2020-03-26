@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".DB_setup">
+
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="202dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:layout_marginBottom="203dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/spinner_border"
+                />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:background="@drawable/spinner_border"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ck_bc"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="BARCODE"
+                android:textSize="@dimen/_13sdp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <EditText
+                android:id="@+id/edt_br"
+                android:hint="Start"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_br1"
+                android:hint="End"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/edt_br2"
+                android:hint="Order"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ck_ic"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="ITEM CODE"
+                android:textSize="@dimen/_13sdp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <EditText
+                android:id="@+id/edt_ic"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_ic1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/edt_ic2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ck_nm"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="NAME"
+                android:textSize="@dimen/_13sdp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <EditText
+                android:id="@+id/edt_nm"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_nm1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/edt_nm2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ck_pr"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="PRICE"
+                android:textSize="@dimen/_13sdp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <EditText
+                android:id="@+id/edt_pr"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_pr1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <EditText
+                android:id="@+id/edt_pr2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/ck_qt"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:text="QTY"
+                android:textSize="@dimen/_13sdp"
+                tools:layout_editor_absoluteX="111dp"
+                tools:layout_editor_absoluteY="33dp" />
+
+            <EditText
+                android:id="@+id/edt_qt"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_30sdp">
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_qt1"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:textSize="@dimen/_13sdp" />
+            <EditText
+                android:id="@+id/edt_qt2"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textSize="@dimen/_13sdp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="0"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/btn_goimport"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="0"
+                android:text="Import" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
