@@ -13,6 +13,7 @@ import com.example.stock_design.Adapters.rowview_location
 import com.example.stock_design.Modle.Item
 import com.example.stock_design.Modle.Item_Detail
 import com.example.stock_design.Modle.Item_search
+import com.example.stock_design.Modle.Master_data
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -269,6 +270,28 @@ class DataBaseHelper(val context: Context) {
 
         db.close()
     }
+
+    val MasterData: MutableList<Master_data>
+        get() {
+            val seItem=ArrayList<Master_data>()
+            val db=context.openOrCreateDatabase(REAL_DATABASE, Context.MODE_PRIVATE, null)
+            val selectQuery=
+                "Select * From Master"
+            val cursor=db.rawQuery(selectQuery, null)
+
+            if (cursor.moveToFirst()) {
+
+                do {
+                    val item=Master_data()
+                    item.br=cursor.getString(cursor.getColumnIndex("barcode"))
+                    item.quantity=cursor.getInt(cursor.getColumnIndex("onhand_qty"))
+                    item.ic=cursor.getString(cursor.getColumnIndex("item_code"))
+                    seItem.add(item)
+                } while(cursor.moveToNext())
+            }
+            db.close()
+            return seItem
+        }
 
     /*update data to transaction table */
     fun updateItem(item: Item): Int {

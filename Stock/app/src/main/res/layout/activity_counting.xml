@@ -66,7 +66,7 @@
     </LinearLayout>
     /* Second Layout for Barcode Scanning */
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
@@ -117,7 +117,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:background="@color/md_deep_purple_100"
         android:orientation="vertical"
         android:paddingLeft="10dp"
@@ -247,21 +247,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|right"
-                android:textSize="@dimen/_70sdp" />
+                android:textSize="@dimen/_50sdp" />
 
             <TextView
                 android:id="@+id/slash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textSize="@dimen/_70sdp" />
+                android:textSize="@dimen/_50sdp" />
 
             <TextView
                 android:id="@+id/txt_master_qty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|left"
-                android:textSize="@dimen/_70sdp" />
+                android:textSize="@dimen/_50sdp" />
 
 
         </LinearLayout>

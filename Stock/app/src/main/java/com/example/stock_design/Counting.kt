@@ -165,14 +165,14 @@ class Counting : AppCompatActivity() {
                     record_code=edt_id.text.toString()
                     db.viewIC()
                     val item=Item(
-                        id,
+                        edt_id.text.toString(),
                         user_record.toString(),
                         view_ic.toString(),
                         Integer.parseInt(quan.toString()),
                         record_date.toString(),
                         record_location.toString()
                     )
-//                    record_code=edt_id.text.toString()
+                    record_code=edt_id.text.toString()
                     db.addItem(item)
 //                    db.checkId(item)
                     db.viewData()
@@ -192,10 +192,17 @@ class Counting : AppCompatActivity() {
                     tran_qty=txt_tran_qty.text.toString().toInt()
                     record_id=edt_id.text.toString()
                     edt_id.text=null
-                    edt_id.requestFocus()
+//                    val imm =
+//                        getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+//                    imm.showSoftInput(edt_id, InputMethodManager.SHOW_IMPLICIT)
                 } catch (nfe: NumberFormatException) {
                     nfe.printStackTrace()
                 }
+                minus.isFocusable = false
+                update.isFocusable = false
+                plus.isFocusable = false
+                edt_id.requestFocus()
+
 //                edt_id.text=null
 //                edt_id.requestFocus()
             }

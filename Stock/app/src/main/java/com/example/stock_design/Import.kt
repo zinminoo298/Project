@@ -11,8 +11,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.example.stock_design.Adapters.Adapter
+import com.example.stock_design.Adapters.Adapter_Master
 import com.example.stock_design.Database.DataBaseHelper
+import com.example.stock_design.Modle.Item_search
+import com.example.stock_design.Modle.Master_data
 import kotlinx.android.synthetic.main.activity_import.*
+import kotlinx.android.synthetic.main.summery.*
 import java.io.BufferedReader
 import java.io.File
 import java.io.IOException
@@ -26,7 +31,8 @@ var com_check:String? = null
 var in_line:Int? = 0
 var code_check:String? =null
 
-
+internal var seItem: MutableList<Master_data> = ArrayList<Master_data>()
+internal lateinit var list:ListView
 
 
 class Import : AppCompatActivity() {
@@ -40,6 +46,7 @@ class Import : AppCompatActivity() {
     internal lateinit var import: Button
     internal lateinit var exit: Button
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_import)
@@ -51,9 +58,30 @@ class Import : AppCompatActivity() {
         loadqt()
         loadcol()
         loadfileType()
+        db = DataBaseHelper(this)
+        list = ListView(this)
+        list = findViewById(R.id.list_master)
+        MasterData()
+        val async = AsyncTaskRunner(this, list)
 
-        btn_choose.setOnClickListener {
-            importDialog(R.style.DialogSlide, this)
+
+        edit_filechoose.setOnClickListener {
+            //            importDialog(R.style.DialogSlide, this)
+            val fileintent = Intent(Intent.ACTION_GET_CONTENT)
+            fileintent.type = "*t/*"
+            lbl = TextView(this)
+            lbl = findViewById(R.id.edit_filechoose)
+            try {
+                startActivityForResult(fileintent, requestcode)
+            } catch (e: ActivityNotFoundException) {
+                println("ERROR")
+            }
+        }
+
+
+        btn_import.setOnClickListener {
+            //            progressBar!!.visibility = View.VISIBLE
+            async.execute()
         }
     }
 
@@ -76,9 +104,7 @@ class Import : AppCompatActivity() {
         dialog.show()
 
         db = DataBaseHelper(this)
-        val async = AsyncTaskRunner(this)
-
-
+        val async = AsyncTaskRunner(this,list)
         lbl.setOnClickListener {
             cond!!.visibility = View.GONE
             val fileintent = Intent(Intent.ACTION_GET_CONTENT)
@@ -178,7 +204,15 @@ class Import : AppCompatActivity() {
 
     }
 
-    private class AsyncTaskRunner(val context: Context) : AsyncTask<String, String, String>() {
+    private fun MasterData() {
+        seItem=db.MasterData
+        val adapter= Adapter_Master( seItem, this)
+        list = ListView(this)
+        list = list_master
+        list.adapter=adapter
+    }
+
+    private class AsyncTaskRunner(val context: Context, val view: ListView) : AsyncTask<String, String, String>() {
 
         internal lateinit var db: DataBaseHelper
         internal lateinit var pgd: ProgressDialog
@@ -248,8 +282,7 @@ class Import : AppCompatActivity() {
             })
             dialog.show()
             pgd.setCancelable(false)
-
-
+            MasterData()
             super.onPostExecute(result)
         }
 
@@ -526,6 +559,12 @@ class Import : AppCompatActivity() {
             }
 
         }
+
+        private fun MasterData() {
+            seItem=db.MasterData
+            val adapter= Adapter_Master( seItem, context)
+            view.adapter=adapter
+        }
     }
 
 
@@ -628,6 +667,8 @@ class Import : AppCompatActivity() {
         var pref=getSharedPreferences("file_type", Activity.MODE_PRIVATE)
         val file = pref.getString("f", "txt")
         file_type = file    }
+
+
 
 
 }
